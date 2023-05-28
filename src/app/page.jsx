@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import HomeHeader from './components/HomeHeader';
 
 export default function Home() {
   return (
-    <div className="text-red-200">Home</div>
+    < >
+    <HomeHeader />
+    </>
   )
 }
