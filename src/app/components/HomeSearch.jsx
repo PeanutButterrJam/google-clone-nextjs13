@@ -34,7 +34,7 @@ export default function HomeSearch() {
           <BsFillMicFill className='text-lg'/>
           </form>
           
-          <div className='flex flex-col space-y-2 sm:space-y-0 sm:space-x-4 justify-center sm:flex-row mt-8 '>
+          <div className='flex flex-col space-y-2 sm:space-y-0 sm:space-x-4 items-center sm:flex-row mt-8 md:justify-center'>
               <button onClick={handleSubmit} className='btn flex items-center justify-center'>Google Search</button>
               <button onClick={randomSearch} disabled={loading} className='btn flex items-center justify-center disabled:opacity-80'>{loading ? (<img className="h-10 m-auto " src="pulse.svg" alt="loading..." />) : "I'm Feeling Lucky"}</button>
           </div>
