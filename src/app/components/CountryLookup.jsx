@@ -7,7 +7,7 @@ export default function CountryLookup() {
     const [country, setCountry] = useState("United States");
 
     useEffect(() => {
-        fetch("http://ip-api.com/json/").then((res)=> res.json()).then((data)=>{setCountry(data.country)});
+        fetch("https://ipapi.co/json/").then((res)=> res.json()).then((data)=>{setCountry(data.country_name)});
     }, [])
 
   return (
